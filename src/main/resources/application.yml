@@ -5,7 +5,7 @@ eureka:
     hostname: localhost
   client:
     serviceUrl:
-      defaultZone : http://${eureka.instance.hostname}:8761/eureka/
+      defaultZone : https://nexio-register-erureka-server.herokuapp.com/eureka/
 
   server:
     eviction-interval-timer-in-ms: 5000
@@ -19,13 +19,13 @@ spring:
 #        - id: order-service
 #          predicates:
 #            - Path=/api/orders/**
-#          uri: https://nexio-orders-api.herokuapp.com/
+#          uri: https://nexio-order-service.herokuapp.com/
   
 #              
 #        - id: stocks-service
 #          predicates:
 #            - Path=/api/stocks/**
-#          uri: https://nexio-stocks-api.herokuapp.com/
+#          uri: https://nexio-stock-service.herokuapp.com/
 #
 
           
